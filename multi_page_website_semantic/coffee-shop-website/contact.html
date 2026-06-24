@@ -6,20 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-    <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About us</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
+    <header> 
     <h1>Contact us and we serve you not just coffee but information!</h1>
+    </header>
 
-    <div>
+    <section>
         <ul>
             <li>E-mail: coffeeishot@milk.com</li>
             <li>Phone: 01234 56789</li>
         </ul>
-    </div>
+    </section>
 
     <div>
          <img
@@ -29,22 +33,51 @@
         />
     </div>
 
-    <div>
+    <footer>
         <form>
             <fieldset>
                 <legend><h2>Contact Form</h2></legend>
                 <label for="name">Name:</label>
-                <input type="text" name="name"
+                <input type="text" name="name"><br><br>
                 <label for="mail">Mailadress:</label> 
-                <input type="text" mail="mail"
+                <input type="text" mail="mail"><br><br>
+
+                <input type="radio" id="customoer" name="people_type" value="" checked />
+                <label for="customer">Customer</label>
+
+                <input type="radio" id="enterprise" name="people_type" value="" checked />             
+                <label for="enterprise">Enterprise</label><br><br>
+
+
+                <label for="contact_topic">Choose a topic:</label>
+                <select name="topic" id="contact_topic" value="">
+                    <option value="">--Please choose an option--</option>
+                    <option value="product_bad">Bad product</option>
+                    <option value="service_bad">Bad service</option>
+                    <option value="stuff">other stuff</option>
+                </select><br><br>
+
+
                 <label for="textarea">Write your Message:</label>
-                <input type="text" textarea="textarea"
-                </fieldset>
-                <button type="submit">Send</button>
+                <input type="text" textarea="textarea"><br><br>
+                
+                <input type="range" id="volume" name="volume" min="0" max="11" />
+                <label for="volume">How satisfited are you with our services so far?</label><br><br>
+                
+                <h3>Whats your favorite coffee?</h3>
+
+                <input type="checkbox" id="black" name="black" />
+                <label for="black">black coffee</label>
+                <input type="checkbox" id="capuccino" name="capuccino" />
+                <label for="capuccino">capuccino</label>
+                <input type="checkbox" id="latte_macchiato" name="latte macchiato" />
+                <label for="latte_macchiato">latte macchiato</label>
+
+                <br><br><br><button type="submit">Send</button>
             </fieldset>
 
         </form>
-    </div>
+    </footer>
 </body>
 
 </html>
